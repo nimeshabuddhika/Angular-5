@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {  //Class component 
-  title = 'Hello app';
+  title = 'Nimesha';
+  siteUrl = window.location.href;
+  myId = "testId"
+  className = "green-text";
+
+  getName(){
+    return "Nimesha Buddhika";
+  }
+
+  onClick(){
+    alert("Click");
+  }
 }
