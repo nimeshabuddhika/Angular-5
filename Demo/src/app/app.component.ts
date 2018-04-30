@@ -11,6 +11,8 @@ export class AppComponent {  //Class component
   className = "green-text";
   msg = "";
 
+  public name = "";
+
   getName(){
     return "Nimesha Buddhika";
   }

@@ -11,6 +11,10 @@
   <input type="text" value="Nimesha" #userName>
   <button (click)="onClick($event)">Click me</button>
   <button (click)="onLog(userName.value)">Log</button>
+  <br>
+  <h1>Real time update</h1>
+  <input type="text" [(ngModel)]="name">
+  <p>{{name}}</p>
   <p>{{msg}}</p>
   <app-test></app-test>
 </div>
