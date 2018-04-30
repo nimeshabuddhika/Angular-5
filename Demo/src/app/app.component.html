@@ -16,6 +16,12 @@
   <input type="text" [(ngModel)]="name">
   <p>{{name}}</p>
   <p>{{msg}}</p>
+
+  <button (click)="onShow()">Show</button>
+  <h4 *ngIf="isVisible; else showName">Structural directive</h4>
+  <ng-template #showName>
+    <h4>My hidden name</h4>
+  </ng-template>
   <app-test></app-test>
 </div>
 
