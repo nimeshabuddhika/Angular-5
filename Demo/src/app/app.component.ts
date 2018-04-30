@@ -8,14 +8,18 @@ import { Component } from '@angular/core';
 export class AppComponent {  //Class component 
   title = 'Nimesha';
   siteUrl = window.location.href;
-  myId = "testId"
   className = "green-text";
+  msg = "";
 
   getName(){
     return "Nimesha Buddhika";
   }
+  onClick(event){
+    console.log(event);
+    this.msg = "Hello";
+  }
 
-  onClick(){
-    alert("Click");
+  onLog(userName){
+    alert(userName);
   }
 }

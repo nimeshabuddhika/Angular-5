@@ -8,8 +8,10 @@
   <p>{{title.toUpperCase()}}</p>
   <p>{{getName()}}</p>
   <p class="{{className}}">{{siteUrl}}</p>
-  <input type="text" value="Nimesha" [id]="myId">
-  <button (click)="onClick()">Click me</button>
+  <input type="text" value="Nimesha" #userName>
+  <button (click)="onClick($event)">Click me</button>
+  <button (click)="onLog(userName.value)">Log</button>
+  <p>{{msg}}</p>
   <app-test></app-test>
 </div>
 
