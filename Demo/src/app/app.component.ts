@@ -11,8 +11,9 @@ export class AppComponent {  //Class component
     className = "green-text";
     msg = "";
     isVisible = false;
-
     public name = "";
+
+    public colors = ["red","blue","green"];
 
     getName() {
         return "Nimesha Buddhika";

@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<div>
   <h1>
     Welcome to {{ title }}!
   </h1>
@@ -22,6 +22,11 @@
   <ng-template #showName>
     <h4>My hidden name</h4>
   </ng-template>
+
+  <ul *ngFor="let color of colors">
+    <li>{{color}}</li>
+  </ul>
+
   <app-test></app-test>
 </div>
 
